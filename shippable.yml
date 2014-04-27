@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "0.10"
+services:
+  - mongodb
+after_success:  
+     git push git@heroku.com:shipdemo.git master
